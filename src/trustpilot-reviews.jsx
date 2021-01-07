@@ -4,15 +4,15 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import TrustpilotContainer from "./trustpilot-container"
 
-const TrustpilotReviews = ({ language, culture, theme, height, width }) => {
+const TrustpilotReviews = ({ template, language, culture, theme, height, width }) => {
   const reference = React.createRef()
   const { sitePlugin } = useStaticQuery(
     graphql`
       query TrustPilot {
         sitePlugin(name: { eq: "@phylaxpl/gatsby-plugin-trustpilot-widget" }) {
           pluginOptions {
-            username
             business
+            username
           }
         }
       }

@@ -1,13 +1,9 @@
 {
-  "name": "@phylax/gatsby-plugin-trustpilot-widget",
+  "name": "@phylaxpl/gatsby-plugin-trustpilot-widget",
   "private": false,
   "description": "Trustpilot widget for GatsbyJS.",
-  "version": "1.0.4",
-  "author": {
-    "name": "Lukasz Nowicki",
-    "email": "kontakt@phylax.pl",
-    "url": "https://phylax.pl"
-  },
+  "version": "1.0.5",
+  "author": "Lukasz Nowicki <kontakt@phylax.pl> (https://phylax.pl)",
   "bugs": {
     "url": "https://github.com/lukasznowicki/gatsby-plugin-trustpilot-widget/issues"
   },
@@ -31,5 +27,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lukasznowicki/gatsby-plugin-trustpilot-widget.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

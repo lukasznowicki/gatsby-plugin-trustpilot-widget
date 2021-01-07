@@ -8,10 +8,10 @@ Forked from https://github.com/pittica/gatsby-plugin-trustpilot-widget
 
 ## Install
 
-[![npm](https://img.shields.io/npm/v/@phylax/gatsby-plugin-trustpilot-widget)](https://www.npmjs.com/package/@phylax/gatsby-plugin-trustpilot-widget)
+[![npm](https://img.shields.io/npm/v/@phylaxpl/gatsby-plugin-trustpilot-widget)](https://www.npmjs.com/package/@phylaxpl/gatsby-plugin-trustpilot-widget)
 
 ```shell
-npm install @phylax/gatsby-plugin-trustpilot-widget
+npm install @phylaxpl/gatsby-plugin-trustpilot-widget
 ```
 
 ## Configuration
@@ -22,10 +22,10 @@ Edit your **gatsby-config.js**.
 module.exports = {
   plugins: [
     {
-      resolve: `@phylax/gatsby-plugin-trustpilot-widget`,
+      resolve: `@phylaxpl/gatsby-plugin-trustpilot-widget`,
       options: {
         username: "USERNAME",
-        template: "TEMPLATE_ID",
+        business: "BUSINESS_ID",
       }
     },
   ],
@@ -49,7 +49,7 @@ You can get the data from the TrustBox in your businness panel on [Trustpilot](h
 Import the component **TrustpilotReviews** in your component.
 
 ```javascript
-import TrustpilotReviews from "@phylax/gatsby-plugin-trustpilot-widget"
+import TrustpilotReviews from "@phylaxpl/gatsby-plugin-trustpilot-widget"
 ```
 
 Use it in your code as component.
@@ -59,7 +59,7 @@ class MyComponent extends React.Component {
   render() {
     return (
       <TrustpilotReviews
-        business="BUSINESSUNIT_ID"
+        template="TEMPLATE_ID"
         language="en"
         culture="US"
         theme="light"
@@ -73,7 +73,7 @@ class MyComponent extends React.Component {
 
 ### Attributes
 
-**Business** attribute is obligatory. The component has optional attributes which the user can use to set the aspect of the TrustBox.
+**template** attribute is obligatory. The component has optional attributes which the user can use to set the aspect of the TrustBox.
 
 #### language
 

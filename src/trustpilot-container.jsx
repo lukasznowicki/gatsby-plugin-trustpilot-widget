@@ -5,8 +5,9 @@ let check
 export default class TrustpilotContainer extends React.Component {
   constructor(props) {
     super(props)
-
-    check = setInterval(this.loadLibrary.bind(this), 1000)
+    if (!check) {
+      check = setInterval(this.loadLibrary.bind(this), 1000)
+    }
   }
 
   componentDidMount() {
